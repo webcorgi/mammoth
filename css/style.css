@@ -2222,7 +2222,7 @@ input[type="checkbox"] {
 .slots .items .item {
     position:relative;
     width: calc(20% - 4px);
-    height:226px;
+    min-height:226px;
     border-radius: 5px;
     overflow: hidden;
     margin-bottom:40px;
