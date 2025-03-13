@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>mammoth</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+        <script src="../js/jquery-2.2.4.min.js"></script>
+        <script src="../js/script.js"></script>
+
+        <!-- swiper slide -->
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+        <script src="../js/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        
+        <!-- Navigation Links -->
+        <nav class="nav-container">
+            <!-- Navigation Header with Logo -->
+            <div class="nav-header">
+                <img src="../img/common/logo.png" alt="Velvet Casino & Sports" class="nav-logo">
+                <button class="nav-close-btn">
+                    <img src="../img/common/nav-close.png" alt="close">
+                </button>
+            </div>
+        
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <div class="pointpage">
+                    <a href="../pages/live-casino.html" class="nav-item ">
+                        <img src="../img/common/ico_left_casino.png" alt="img" class="nav-icon">
+                        <span class="nav-text">
+                            <img src="../img/common/text_left_casino.png" alt="live casino">
+                        </span>
+                    </a>
+                    <a href="../pages/sports.html" class="nav-item">
+                        <img src="../img/common/ico_left_sports.png" alt="img" class="nav-icon">
+                        <span class="nav-text">
+                            <img src="../img/common/text_left_sports.png" alt="sports">
+                        </span>
+                    </a>
+                    <a href="../pages/slots.html" class="nav-item ">
+                        <img src="../img/common/ico_left_slots.png" alt="img" class="nav-icon">
+                        <span class="nav-text">
+                            <img src="../img/common/text_left_slots.png" alt="slots">
+                        </span>
+                    </a>
+                    <a href="../pages/holdem.html" class="nav-item ">
+                        <img src="../img/common/ico_left_holdem.png" alt="img" class="nav-icon">
+                        <span class="nav-text">
+                            <img src="../img/common/text_left_holdem.png" alt="holdem">
+                        </span>
+                    </a>
+                    <a href="../pages/minigame.html" class="nav-item">
+                        <img src="../img/common/ico_left_minigame.png" alt="img" class="nav-icon">
+                        <span class="nav-text">
+                            <img src="../img/common/text_left_minigame.png" alt="minigame">
+                        </span>
+                    </a>
+                </div>
+
+                <div class="otherpage">
+                    <a href="../pages/deposit.html" class="nav-item ">
+                        <img src="../img/common/ico_left_deposit.png" alt="img" class="nav-icon">
+                        <span class="nav-text">입금신청</span>
+                    </a>
+                    <a href="../pages/withdraw.html" class="nav-item">
+                        <img src="../img/common/ico_left_withdraw.png" alt="img" class="nav-icon">
+                        <span class="nav-text">출금신청</span>
+                    </a>
+                    <a href="../pages/attendance.html" class="nav-item ">
+                        <img src="../img/common/ico_left_check.png" alt="img" class="nav-icon">
+                        <span class="nav-text">출석체크</span>
+                    </a>
+                    <a href="../pages/rolling.html" class="nav-item ">
+                        <img src="../img/common/ico_left_rolling.png" alt="img" class="nav-icon">
+                        <span class="nav-text">룰렛</span>
+                    </a>
+                    <a href="../pages/money.html" class="nav-item ">
+                        <img src="../img/common/ico_left_money.png" alt="img" class="nav-icon">
+                        <span class="nav-text">머니이동</span>
+                    </a>
+                    <a href="../pages/events.html" class="nav-item ">
+                        <img src="../img/common/ico_left_event.png" alt="img" class="nav-icon">
+                        <span class="nav-text">이벤트</span>
+                    </a>
+                    <a href="../pages/notice.html" class="nav-item">
+                        <img src="../img/common/ico_left_notice.png" alt="img" class="nav-icon">
+                        <span class="nav-text">공지사항</span>
+                    </a>
+                    <a href="../pages/betting-history.html" class="nav-item active">
+                        <img src="../img/common/ico_left_betting.png" alt="img" class="nav-icon">
+                        <span class="nav-text">베팅내역</span>
+                    </a>
+                    <a href="../pages/1-to-1.html" class="nav-item">
+                        <img src="../img/common/ico_left_contact.png" alt="img" class="nav-icon">
+                        <span class="nav-text">1:1문의</span>
+                    </a>
+                    <a href="../pages/faq.html" class="nav-item ">
+                        <img src="../img/common/ico_left_faq.png" alt="img" class="nav-icon">
+                        <span class="nav-text">자주묻는질문</span>
+                    </a>
+                    <a href="../pages/mypage.html" class="nav-item">
+                        <img src="../img/common/ico_left_mypage.png" alt="img" class="nav-icon">
+                        <span class="nav-text">마이페이지</span>
+                    </a>
+                    <a href="../pages/live-chat.html" class="nav-item nav-chat">
+                        <img src="../img/common/ico_left_chat.png" alt="img" class="nav-icon">
+                        <span class="nav-text">라이브 채팅</span>
+                    </a>
+                </div>
+                <!-- Login/Signup Buttons -->
+                <div class="nav-buttons">
+                    <button class="nav-signup-btn" onclick="location.href='./signin.html'">회원가입</button>
+                    <button class="nav-login-btn">로그인</button>
+                </div>
+
+                <img src="../img/common/leftmenu_mam.png" alt="mam">
+            </div>
+        </nav>
+
+        <header class="">
+            <div class="header__left">
+                <button class="btn-menu"></button>
+                <a href="./index.html">홈</a>
+                <a href="./live-casino.html">카지노</a>
+                <a href="./slots.html">슬롯</a>
+                <a href="./sports.html">스포츠</a>
+                <a href="./holdem.html">홀덤</a>
+                <a href="./minigame.html">미니게임</a>
+            </div>
+            <img src="../img/common/logo_mobile.png" alt="맘모스카지노" class="header__logo">
+            <aside class="header__right">
+                <div class="header__Loggedin">
+                    
+                    <!-- Balance Display -->
+                    <div class="balance-display">
+                        <span class="balance-amount">100,000</span>
+                        <span class="balance-currency">원</span>
+                    </div>
+                    
+                    <!-- Deposit Button -->
+                    <button class="deposit-button" onclick="location.href='./deposit.html'">충전신청</button>
+                    
+                    
+                    <!-- Profile Icon -->
+                    <a href="./mypage.html" class="btn-head-mypage-pc">
+                        <img src="../img/common/profile-icon.png" alt="프로필" class="profile-icon">
+                    </a>
+                    <!-- Notification Bell with Counter -->
+                    <a href="./mypage__messages.html" class="notification-wrapper">
+                        <img src="../img/common/notification-bell.png" alt="알림" class="notification-icon">
+                        <div class="notification-badge">1</div>
+                    </a>
+                    <a href="javascript:;" class="btn-head-mypage-mobile">
+                        <img src="../img/common/profile-icon.png" alt="프로필" class="profile-icon">
+                    </a>
+                    <div class="head-mypage-popup">
+                        <div class="item">
+                            <div class="balance-display">
+                                <span class="balance-amount">100,000</span>
+                                <span class="balance-currency">원</span>
+                            </div>
+                            <button class="deposit-button" onclick="location.href='./deposit.html'">충전신청</button>
+                        </div>
+                        <div class="item">
+                            <button class="btn-head-popup-mypage" onclick="location.href='./mypage.html'">마이페이지</button>
+                        </div>
+                        <div class="item">
+                            <button class="btn-head-popup-logout">로그아웃</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </header>
+
+        <div class="contents_container">
+
+            <div class="contents sub">
+              <h2 class="sub__title tabInit">
+                <span>베팅내역</span>
+                <div class="tab__mypage">
+                    <button onclick="location.href='./betting-history.html'">스포츠</button>
+                    <button onclick="location.href='./betting-casino.html'">카지노</button>
+                    <button onclick="location.href='./betting-slot.html'">슬롯</button>
+                    <button onclick="location.href='./betting-minigame.html'">미니게임</button>
+                    <button class="active" onclick="location.href='./betting-virtual.html'">가상게임</button>
+                </div>
+              </h2>
+
+              <div class="mypage__table">
+                <table>
+                    <tbody><tr>
+                        <th>선택</th>
+                        <th>베팅 시간</th>
+                        <th>게임정보</th>
+                        <th>베팅정보</th>
+                        <th>지불금</th>
+                        <th>베팅 금액</th>
+                        <th>승리</th>
+                        <th>결과</th>
+                    </tr>
+                    <tr>
+                        <td>onokyd4wn7uekbjx</td>
+                        <td>25.1.24</td>
+                        <td>New York Knicks vs Chicago Bulls</td>
+                        <td>1019_55328272876</td>
+                        <td>NBA</td>
+                        <td>2,000</td>
+                        <td>-2,000</td>
+                        <td>2,000</td>
+                    </tr>
+                    <tr>
+                        <td>onokyd4wn7uekbjx</td>
+                        <td>25.1.24</td>
+                        <td>New York Knicks vs Chicago Bulls</td>
+                        <td>1019_55328272876</td>
+                        <td>NBA</td>
+                        <td>2,000</td>
+                        <td>-2,000</td>
+                        <td>2,000</td>
+                    </tr>
+                    <tr>
+                        <td>onokyd4wn7uekbjx</td>
+                        <td>25.1.24</td>
+                        <td>New York Knicks vs Chicago Bulls</td>
+                        <td>1019_55328272876</td>
+                        <td>NBA</td>
+                        <td>2,000</td>
+                        <td>-2,000</td>
+                        <td>2,000</td>
+                    </tr>
+                    <tr>
+                        <td>onokyd4wn7uekbjx</td>
+                        <td>25.1.24</td>
+                        <td>New York Knicks vs Chicago Bulls</td>
+                        <td>1019_55328272876</td>
+                        <td>NBA</td>
+                        <td>2,000</td>
+                        <td>-2,000</td>
+                        <td>2,000</td>
+                    </tr>
+                </tbody></table>
+              </div>
+
+
+
+              <div class="body_bg sub">
+                  <img src="../img/main/body_bg1.png" alt="bg img" class="body-bg1">
+                  <img src="../img/main/body_bg2.png" alt="bg img" class="body-bg2">
+              </div>
+            </div>
+
+            <!-- HTML -->
+            <footer class="site-footer">
+                <div class="site-footer__container">
+                <!-- Mascot Section -->
+                <div class="site-footer__mascot-section">
+                    <div class="site-footer__mascot">
+                      <img src="../img/common/footer_mam.png" alt="Site Mascot" class="site-footer__mascot-img">
+                    </div>
+                </div>
+            
+                <!-- Main Navigation Section -->
+                <div class="site-footer__nav-section">
+                    <!-- Service Column -->
+                    <div class="site-footer__nav-column">
+                    <h3 class="site-footer__nav-title">서비스</h3>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">프로모션</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">결과</a></li>
+                        <li class="site-footer__nav-item">
+                            <div class="site-footer__language-wrapper">
+                              <div class="site-footer__flag-container">
+                                <img src="../img/common/flag-eng.png" alt="Language Flag" class="site-footer__flag-icon" id="languageFlag">
+                              </div>
+                              <select class="site-footer__language-select" id="languageSelect">
+                                <option value="en" data-flag="../img/common/flag-eng.png">English</option>
+                                <option value="ko" data-flag="../img/common/flag-kor.png">한국어</option>
+                              </select>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+            
+                    <!-- Sports Column -->
+                    <div class="site-footer__nav-column">
+                    <h3 class="site-footer__nav-title">스포츠</h3>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">라이브 베팅</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">축구</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">농구</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">야구</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">배구</a></li>
+                    </ul>
+                    </div>
+            
+                    <!-- Casino Column -->
+                    <div class="site-footer__nav-column">
+                    <h3 class="site-footer__nav-title">게임플레이</h3>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">카지노</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">라이브카지노</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">TV 게임</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">슬롯</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">라플부선 볼링</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">미니게임</a></li>
+                    </ul>
+                    </div>
+            
+                    <!-- About Column -->
+                    <div class="site-footer__nav-column">
+                    <h3 class="site-footer__nav-title">안내</h3>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">우리에 대해</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">연락처</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">베팅 안내</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">베팅 규정</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">자주묻는질문</a></li>
+                    </ul>
+                    </div>
+            
+                    <!-- Legal Column -->
+                    <div class="site-footer__nav-column">
+                    <h3 class="site-footer__nav-title">합법적인</h3>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">조건</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">개인정보 보호 정책</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">책임감 있는 게임</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">지기 배제 정책</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">미성년자 게임 정책</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">KYC 정책</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            
+                <!-- Payment Methods Section -->
+                <div class="site-footer__payment-section">
+                <div class="site-footer__payment-methods">
+                    <div class="site-footer__payment-item">
+                    <img src="../img/common/visa.png" alt="Visa" class="site-footer__payment-icon">
+                    </div>
+                    <div class="site-footer__payment-item">
+                    <img src="../img/common/mastercard.png" alt="MasterCard" class="site-footer__payment-icon">
+                    </div>
+                    <div class="site-footer__payment-item">
+                    <img src="../img/common/skrill.png" alt="Skrill" class="site-footer__payment-icon">
+                    </div>
+                    <div class="site-footer__payment-item">
+                    <img src="../img/common/neteller.png" alt="Neteller" class="site-footer__payment-icon">
+                    </div>
+                    <div class="site-footer__payment-item">
+                    <img src="../img/common/ecopayz.png" alt="ecoPayz" class="site-footer__payment-icon">
+                    </div>
+                    <div class="site-footer__payment-item">
+                    <img src="../img/common/mifinity.png" alt="Mifinity" class="site-footer__payment-icon">
+                    </div>
+                    <div class="site-footer__payment-item">
+                    <img src="../img/common/payredeem.png" alt="PayRedeem" class="site-footer__payment-icon">
+                    </div>
+                </div>
+                </div>
+            
+                <!-- Game Providers Section -->
+                <div class="site-footer__providers-section">
+                <div class="site-footer__providers">
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/betsoft.png" alt="Betsoft" class="site-footer__provider-icon">
+                    </div>
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/microgaming.png" alt="Microgaming" class="site-footer__provider-icon">
+                    </div>
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/tom-horn.png" alt="Tom Horn Gaming" class="site-footer__provider-icon">
+                    </div>
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/playngo.png" alt="Play'n GO" class="site-footer__provider-icon">
+                    </div>
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/gameart.png" alt="GameArt" class="site-footer__provider-icon">
+                    </div>
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/vivogaming.png" alt="VivoGaming" class="site-footer__provider-icon">
+                    </div>
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/evolution.png" alt="Evolution" class="site-footer__provider-icon">
+                    </div>
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/endorphina.png" alt="Endorphina" class="site-footer__provider-icon">
+                    </div>
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/netent.png" alt="NetEnt" class="site-footer__provider-icon">
+                    </div>
+                    <div class="site-footer__provider-item">
+                    <img src="../img/common/pragmatic-play.png" alt="Pragmatic Play" class="site-footer__provider-icon">
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </div>
+
+    </body>
+</html>
