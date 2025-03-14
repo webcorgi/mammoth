@@ -14,6 +14,12 @@ $(function () {
     btnHeadPopupMobile()
     mainRealTimeTab()
     languageSelect()
+    loginBeforeBodyMarginTop()
+
+    $(window).resize(function(){
+        loginBeforeBodyMarginTop()
+    })
+
 })
 
 function mainVisualSlider() {
@@ -71,6 +77,7 @@ function clickNav(){
     $('.nav-close-btn').on('click', function(){
         $nav.removeClass('active')
         $('header').removeClass('active')
+        $('.btn-menu').removeClass('active')
     })
 }
 
@@ -484,4 +491,12 @@ function languageSelect(){
         languageFlag.alt = selectedOption.text + ' Flag';
         }
     });
+}
+
+function loginBeforeBodyMarginTop() {
+    if ($('.before__login').length && $(window).width() <= 768) {
+        $('body').css({marginTop:60});
+    }else{
+        $('body').css({marginTop:0});
+    }
 }
