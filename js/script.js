@@ -15,6 +15,9 @@ $(function () {
     mainRealTimeTab()
     languageSelect()
     loginBeforeBodyMarginTop()
+    loginPopupClose()
+    loginPopupForSignup()
+    loginPopupForSignupEnd()
 
     $(window).resize(function(){
         loginBeforeBodyMarginTop()
@@ -499,4 +502,37 @@ function loginBeforeBodyMarginTop() {
     }else{
         $('body').css({marginTop:0});
     }
+}
+
+
+
+
+function loginPopupClose(){
+    if( !$('.popup__login').length ) return;
+    $('.popup__login').each(function(){
+        $(this).find('img, .bg').on('click', function(){
+            $(this).closest('.popup__login').hide()
+        })
+    })
+}
+
+function loginPopupForSignup(){
+    $('.popup__signup').find('.btn-close, .popup__signup__bg').on('click', function(){
+        $('.popup__signup').hide()
+    })
+
+    $('.btn-signup').on('click', function(){
+        $('.popup__signup').css({display:'flex'})
+    });
+
+    $('.btn-btm-signup').on('click', function(){
+        $('.popup__signup').css({display:'none'})
+        $('.popup__signupend').css({display:'flex'})
+    });
+}
+
+function loginPopupForSignupEnd(){
+    $('.popup__signupend').find('.btn-close, .popup__signupend__bg').on('click', function(){
+        $('.popup__signupend').hide()
+    })
 }
