@@ -3709,7 +3709,7 @@ color: #999;
     transform:translateY(-50%);
 }
 .popup__login__wrapper .popup__login img {
-    width:310px;
+    width:400px;
 }
 .popup__login__wrapper .popup__login.left {
     left:5%;
