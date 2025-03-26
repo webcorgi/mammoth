@@ -3597,6 +3597,12 @@ color: #999;
     padding:0 20px;
     min-height:100vh;
     background:url(../img/login/bg.jpg) 50% /cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.page__login__wrap{
+    width:100%;
 }
 .login__container {
     max-width:564px;
@@ -3670,8 +3676,7 @@ color: #999;
 
 .login__top__msg__wrap {
     height:59px;
-    margin:10% auto 17px;
-    margin-bottom:17px;
+    margin:0 auto 17px;
 }
 .login__top__msg {
     display:flex;
@@ -3702,7 +3707,6 @@ color: #999;
     top:50%;
     z-index:1000;
     transform:translateY(-50%);
-    box-shadow: 0px 4px 16px 0px #00000033;
 }
 .popup__login__wrapper .popup__login img {
     width:310px;
@@ -3730,13 +3734,13 @@ color: #999;
 }
 .popup__signup__cont {
     position:relative;
-    max-width:564px;
+    max-width:1000px;
     width:100%;
     height:100%;
     overflow:hidden;
     padding:10px 20px 50px;
     z-index:10;
-    background:#fff url(../img/login/signup_bg.png) top /contain no-repeat;
+    background:#fff url(../img/login/signup_bg.png) top /cover no-repeat;
 }
 .popup__signup__bg {
     position: absolute;
@@ -3853,16 +3857,16 @@ color: #999;
 }
 
 .popup__signup .line__cont-top select option {
-    font-size:10px;
+    font-size:14px;
 }
 
 .popup__signup .line__cont-top select,
 .popup__signup .line__cont-top input {
     border:1px solid rgb(219, 219, 219);
-    height:26px;
+    height:40px;
     background:#fff;
     border-radius:4px;
-    font-size:12px;
+    font-size:14px;
 }
 .popup__signup .line__cont-top input::placeholder {
     color:#BDBDBD;
@@ -3875,11 +3879,11 @@ color: #999;
     justify-content:center;
     align-items:center;
     color:#1B1B1B;
-    font-size:12px;
+    font-size:14px;
     text-shadow: 0px 1px 0.6px 0px #00000066;
     min-width:129px;
     width:129px;
-    height:26px;
+    height:40px;
     box-shadow: 0px -1.01px 2.72px 0px #00000066 inset;
 }
 .popup__signup .line>p {
@@ -3899,7 +3903,7 @@ color: #999;
 }
 
 .popup__signup .line__cont-btm b {
-    font-size:10px;
+    font-size:12px;
     font-weight:bold;
 }
 
@@ -3915,8 +3919,8 @@ color: #999;
 }
 
 .popup__signup .btn-btm-signup {
-    width:183px;
-    height:30px;
+    width:200px;
+    height:40px;
     background:#592322;
     display:flex;
     justify-content:center;
@@ -3925,7 +3929,7 @@ color: #999;
     font-size:16px;
     border-radius:4px;
     text-shadow: 0px 1px 0.6px  #00000066;
-    margin:0 auto;
+    margin:40px auto;
     background:linear-gradient(180deg, #FFE600 0%, #FFBB00 100%);
     box-shadow: 0px -1.01px 2.72px 0px #00000066 inset;
 }
